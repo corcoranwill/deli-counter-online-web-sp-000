@@ -10,7 +10,7 @@ def line(customers)
     return_string.prepend("The line is currently: ")
     return_string
   end
-  binding.pry
+  # binding.pry
 end
 
 def take_a_number(katz_deli, name)
