@@ -4,12 +4,11 @@ require 'pry'
 
 def line(customers)
   if customers.empty?
-    "The line is currently empty."
+    return_string = "The line is currently empty."
   else
-    customers.map.with_index do | customer, index|
-    "#{index + 1}. #{w}"
-
-    "The line is currently: 1. Logan 2. Avi 3. Spencer"
+    return_string = customers.map.with_index(1){customer,i|"#{i}. #{customer}"}
+    return_string.prepend("The line is currently: ")
+    return_string
   end
   binding.pry
 end
