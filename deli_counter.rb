@@ -1,14 +1,17 @@
 # Write your code here.
+require 'pry'
+
 
 def line(customers)
   if customers.empty?
     "The line is currently empty."
   else
-    # r.map.with_index do |w, index|
-    # "#{index + 1}. #{w}"
+    customers.map.with_index do | customer, index|
+    "#{index + 1}. #{w}"
 
     "The line is currently: 1. Logan 2. Avi 3. Spencer"
   end
+  binding.pry
 end
 
 def take_a_number(katz_deli, name)
