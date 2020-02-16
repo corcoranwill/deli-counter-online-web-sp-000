@@ -6,7 +6,7 @@ def line(customers)
   if customers.empty?
     return_string = "The line is currently empty."
   else
-    return_string = customers.map.with_index(1){customer,i|"#{i}. #{customer}"}
+    return_string = customers.map.with_index(1){|customer,i|"#{i}. #{customer}"}
     return_string.prepend("The line is currently: ")
     return_string
   end
